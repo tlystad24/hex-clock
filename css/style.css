@@ -1,8 +1,15 @@
-/* style.css */
 body {
-  font-family: 'Lato';
-  text-align: center;
-  width: 600px;
+  font-family: 'lato';
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 /* Default box shadow */
@@ -15,10 +22,11 @@ body {
   transition: 0.3s;
   text-align: center;
   border-radius: 5px;
+  background-color: white;
 }
 
 h1 {
-  padding-top: 15px
+  padding-top: 16px
 }
 
 /* Deeper shadow on hover */
@@ -36,4 +44,9 @@ h1 {
 #clock {
   color: white;
   font-size: 30px;
+}
+
+#weekday {
+  color: black;
+  font-size: 40px;
 }

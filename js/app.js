@@ -1,9 +1,10 @@
-/* app.js */
+var hexcolor = document.getElementById('hexcolor');
 var clock = document.getElementById('clock');
 var hexColor = document.getElementById('hex-color');
 
-function hexClock() {
+function colorClock() {
   var time = new Date();
+  var day = time.getDay();
   var hours = time.getHours().toString();
   var minutes = time.getMinutes().toString();
   var seconds = time.getSeconds().toString();
@@ -22,11 +23,17 @@ function hexClock() {
 
   var clockStr = hours + ' : ' + minutes + ' : ' + seconds;
   var hexColorStr = '#' + hours + minutes + seconds;
+  var dayStr = day;
 
-  clock.textContent = clockStr;
-  hexColor.textContent = hexColorStr;
-  document.body.style.backgroundColor = hexColorStr;
+
+
+  hexcolor.textContent = hexColorStr;
+  // clock.textContent = clockStr;
+
+
+  document.getElementById('container').style.backgroundColor = hexColorStr;
+  document.getElementById('hexcolor').style.color = hexColorStr;
 }
 
-hexClock();
-setInterval(hexClock, 1000);
+colorClock();
+setInterval(colorClock, 1000);
