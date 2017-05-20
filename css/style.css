@@ -1,0 +1,12 @@
+/* This should be in a folder named `css` */
+body {
+  font-family: sans-serif;
+  color: white;
+  margin-top: 200px;
+  text-align: center;
+}
+
+#clock {
+  font-weight: 300;
+  font-size: 100px;
+}
