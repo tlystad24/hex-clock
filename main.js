@@ -5,8 +5,9 @@ let mainWindow = null
 
 app.on('ready', function() {
     mainWindow = new BrowserWindow({
-        height: 600,
-        width: 800
+        height: 400,
+        width: 300,
+        titleBarStyle: 'hidden-inset'
     });
 
     mainWindow.loadURL('file://' + __dirname + '/app/index.html');
