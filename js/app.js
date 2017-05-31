@@ -1,6 +1,6 @@
-var hexcolor = document.getElementById('hexcolor');
-var clock = document.getElementById('clock');
-var hexColor = document.getElementById('hex-color');
+var hexcolor = document.getElementById("hexcolor");
+var clock = document.getElementById("clock");
+var hexColor = document.getElementById("hex-color");
 
 function colorClock() {
   var time = new Date();
@@ -28,10 +28,10 @@ function colorClock() {
 
 
   hexcolor.textContent = hexColorStr;
-  
 
-  document.getElementById('container').style.backgroundColor = hexColorStr;
-  document.getElementById('hexcolor').style.color = hexColorStr;
+
+  document.getElementById("container").style.backgroundColor = hexColorStr;
+  document.getElementById("hexcolor").style.color = hexColorStr;
 }
 
 colorClock();
