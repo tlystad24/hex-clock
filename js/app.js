@@ -10,19 +10,19 @@ function colorClock() {
   var seconds = time.getSeconds().toString();
 
   if (hours.length < 2) {
-    hours = '0' + hours;
+    hours = "0" + hours;
   }
 
   if (minutes.length < 2) {
-    minutes = '0' + minutes;
+    minutes = "0" + minutes;
   }
 
   if (seconds.length < 2) {
-    seconds = '0' + seconds;
+    seconds = "0" + seconds;
   }
 
-  var clockStr = hours + ' : ' + minutes + ' : ' + seconds;
-  var hexColorStr = '#' + hours + minutes + seconds;
+  var clockStr = hours + " : " + minutes + " : " + seconds;
+  var hexColorStr = "#" + hours + minutes + seconds;
   var dayStr = day;
 
 
