@@ -28,8 +28,7 @@ function colorClock() {
 
 
   hexcolor.textContent = hexColorStr;
-  // clock.textContent = clockStr;
-
+  
 
   document.getElementById('container').style.backgroundColor = hexColorStr;
   document.getElementById('hexcolor').style.color = hexColorStr;
