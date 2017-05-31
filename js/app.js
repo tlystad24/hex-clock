@@ -26,7 +26,6 @@ function colorClock() {
   var dayStr = day;
 
 
-
   hexcolor.textContent = hexColorStr;
 
 
