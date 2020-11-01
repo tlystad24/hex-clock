@@ -1,13 +1,13 @@
-var hexcolor = document.getElementById("hexcolor");
-var clock = document.getElementById("clock");
-var hexColor = document.getElementById("hex-color");
+let hexcolor = document.getElementById("hexcolor");
+let clock = document.getElementById("clock");
+let hexColor = document.getElementById("hex-color");
 
 function colorClock() {
-  var time = new Date();
-  var day = time.getDay();
-  var hours = time.getHours().toString();
-  var minutes = time.getMinutes().toString();
-  var seconds = time.getSeconds().toString();
+  let time = new Date();
+  let day = time.getDay();
+  let hours = time.getHours().toString();
+  let minutes = time.getMinutes().toString();
+  let seconds = time.getSeconds().toString();
 
   if (hours.length < 2) {
     hours = "0" + hours;
